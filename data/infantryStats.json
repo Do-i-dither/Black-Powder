@@ -1,0 +1,383 @@
+{
+  "Infantry": {
+    "Line Infantry": {
+      "British": {
+        "Description": "Known for their discipline and effectiveness in line formation, delivering powerful volleys of musket fire.",
+        "Movement": {
+          "Line Formation": "Up to 12 inches per order",
+          "Double Line": "Up to 12 inches per order",
+          "March Column Formation": "Up to 24 inches per order",
+          "Square Formation": "Limited to move vertically away from an enemy towards 'home' 6 inches per order.",
+          "Disordered": "No Movement"
+        },
+        "Shooting": {
+          "Range": "Smoothbore Muskets: 18 inches",
+          "Attack Dice": {
+            "Line Formation": 3,
+            "Double Line": 2,
+            "March Column or Square": 1,
+            "Mixed Formation": 1
+          }
+        },
+        "Hand-to-Hand": {
+          "Combat Value": 6,
+          "Modifiers": {
+            "Large Unit": "+2",
+            "Small Unit": "-2",
+            "Tiny Unit": "Roll only 1 dice"
+          }
+        },
+        "Stamina": 3,
+        "Morale": "4+"
+      },
+      "French": {
+        "Description": "Versatile units that can fight in both line and column formations.",
+        "Movement": {
+          "Line Formation": "Up to 12 inches per order",
+          "Attack Column": "Up to 12 inches per order",
+          "March Column Formation": "Up to 24 inches per order",
+          "Square Formation": "Limited to move vertically away from an enemy towards 'home' 6 inches per order.",
+          "Disordered": "No Movement"
+        },
+        "Shooting": {
+          "Range": "Smoothbore Muskets: 18 inches",
+          "Attack Dice": {
+            "Line Formation": 3,
+            "Attack Column": 2,
+            "March Column or Square": 1,
+            "Mixed Formation": 1
+          }
+        },
+        "Hand-to-Hand": {
+          "Combat Value": 6,
+          "Modifiers": {
+            "Large Unit": "+2",
+            "Small Unit": "-2",
+            "Tiny Unit": "Roll only 1 dice"
+          }
+        },
+        "Stamina": 3,
+        "Morale": "4+"
+      }
+    },
+    "Light Infantry": {
+      "British": {
+        "Description": "Used for skirmishing and reconnaissance, these troops are more flexible and can operate in loose order.",
+        "Movement": {
+          "Line Formation": "Up to 12 inches per order",
+          "Double Line": "Up to 12 inches per order",
+          "Square Formation": "Limited to move vertically away from an enemy towards 'home' 6 inches per order.",
+          "March Column Formation": "Up to 24 inches per order",
+          "Skirmish Formation": "Up to 12 inches per order, with increased flexibility to move through rough terrain",
+          "Disordered": "No Movement"
+        },
+        "Shooting": {
+          "Range": {
+            "Smoothbore Carbines": "12 inches",
+            "Rifled Carbines": "18 inches (for specialized units like the 95th Rifles)"
+          },
+          "Attack Dice": {
+            "Line Formation": 3,
+            "Double Line": 2,
+            "Skirmish Formation": 1,
+            "March Column or Square": 1,
+            "Mixed Formation": 1
+          }
+        },
+        "Hand-to-Hand": {
+          "Combat Value": 6,
+          "Modifiers": {
+            "Skirmish Formation": 3,
+            "Large Unit": "+2",
+            "Small Unit": "-2",
+            "Tiny Unit": "Roll only 1 dice"
+          }
+        },
+        "Stamina": 3,
+        "Morale": "4+"
+      },
+      "French": {
+        "Description": "More mobile and used for skirmishing, these troops can operate in loose order and are effective in rough terrain.",
+        "Movement": {
+          "Line Formation": "Up to 12 inches per order",
+          "March Column Formation": "Up to 24 inches per order",
+          "Skirmish Formation": "Up to 12 inches per order, with increased flexibility to move through rough terrain",
+          "Disordered": "No Movement"
+        },
+        "Shooting": {
+          "Range": {
+            "Smoothbore Carbines": "12 inches",
+            "Rifled Carbines": "18 inches (for specialized units like Voltigeurs)"
+          },
+          "Attack Dice": {
+            "Line Formation": 3,
+            "Skirmish Formation": 1,
+            "March Column or Square": 1,
+            "Mixed Formation": 1
+          }
+        },
+        "Hand-to-Hand": {
+          "Combat Value": 6,
+          "Modifiers": {
+            "Skirmish Formation": 3,
+            "Large Unit": "+2",
+            "Small Unit": "-2",
+            "Tiny Unit": "Roll only 1 dice"
+          }
+        },
+        "Stamina": 3,
+        "Morale": "4+"
+      }
+    },
+    "Grenadiers/95th Rifles": {
+      "British": {
+        "Description": "Specialized light infantry armed with rifles instead of muskets, providing greater accuracy and range. The famous 95th Rifles are a notable example.",
+        "Movement": {
+          "Line Formation": "Up to 12 inches per order",
+          "Double Line": "Up to 12 inches per order",
+          "March Column Formation": "Up to 24 inches per order",
+          "Skirmish Formation": "Up to 12 inches per order, with increased flexibility to move through rough terrain",
+          "Disordered": "No Movement"
+        },
+        "Shooting": {
+          "Range": {
+            "Smoothbore Muskets": "18 inches",
+            "Rifled Muskets": "24 inches"
+          },
+          "Attack Dice": {
+            "Line Formation": 3,
+            "Double Line": 2,
+            "March Column or Square": 1,
+            "Mixed Formation": 1
+          }
+        },
+        "Hand-to-Hand": {
+          "Combat Value": 6,
+          "Modifiers": {
+            "Skirmish Formation": 3,
+            "Large Unit": "+2",
+            "Small Unit": "-2",
+            "Tiny Unit": "Roll only 1 dice"
+          }
+        },
+        "Stamina": 3,
+        "Morale": "4+"
+      },
+      "French": {
+        "Description": "Elite troops selected from the best soldiers in the line regiments, known for their strength and morale.",
+        "Movement": {
+          "Line Formation": "Up to 12 inches per order",
+          "Attack Column": "Up to 12 inches per order",
+          "March Column Formation": "Up to 24 inches per order",
+          "Skirmish Formation": "Up to 12 inches per order, with increased flexibility to move through rough terrain",
+          "Disordered": "No Movement"
+        },
+        "Shooting": {
+          "Range": "Smoothbore Muskets: 18 inches",
+          "Attack Dice": {
+            "Line Formation": 3,
+            "Attack Column": 2,
+            "March Column or Square": 1,
+            "Mixed Formation": 1
+          }
+        },
+        "Hand-to-Hand": {
+          "Combat Value": 6,
+          "Modifiers": {
+            "Skirmish Formation": 3,
+            "Large Unit": "+2",
+            "Small Unit": "-2",
+            "Tiny Unit": "Roll only 1 dice"
+          }
+        },
+        "Stamina": 3,
+        "Morale": "4+"
+      }
+    },
+    "Militia": {
+      "British": {
+        "Description": "Militia units, often less trained and less disciplined than regular line troops, but still capable in combat.",
+        "Movement": {
+          "Line Formation": "Up to 12 inches per order",
+          "Double Line": "Up to 12 inches per order",
+          "March Column Formation": "Up to 24 inches per order",
+          "Square Formation": "Limited to move vertically away from an enemy towards 'home' 6 inches per order.",
+          "Disordered": "No Movement"
+        },
+        "Shooting": {
+          "Range": "Smoothbore Muskets: 12 inches",
+          "Attack Dice": {
+            "Line Formation": 2,
+            "Double Line": 1,
+            "March Column or Square": 1,
+            "Mixed Formation": 1
+          }
+        },
+        "Hand-to-Hand": {
+          "Combat Value": 4,
+          "Skirmish Formation Combat Value": 2,
+          "Modifiers": {
+            "Large Unit": "+1",
+            "Small Unit": "-1",
+            "Tiny Unit": "Roll only 1 dice"
+          }
+        },
+        "Stamina": 2,
+        "Morale": "5+"
+      },
+      "French": {
+        "Description": "Militia units that can provide a useful reserve force, though typically less reliable than regular troops.",
+        "Movement": {
+          "Line Formation": "Up to 12 inches per order",
+          "Attack Column Formation": "Up to 12 inches per order",
+          "March Column Formation": "Up to 24 inches per order",
+          "Skirmish Formation": "Up to 12 inches per order",
+          "Disordered": "No Movement"
+        },
+        "Shooting": {
+          "Range": "Smoothbore Muskets: 12 inches",
+          "Attack Dice": {
+            "Line Formation": 2,
+            "Attack Column Formation": 2,
+            "March Column or Square": 1,
+            "Mixed Formation": 1
+          }
+        },
+        "Hand-to-Hand": {
+          "Combat Value": 4,
+          "Skirmish Formation Combat Value": 2,
+          "Modifiers": {
+            "Large Unit": "+1",
+            "Small Unit": "-1",
+            "Tiny Unit": "Roll only 1 dice"
+          }
+        },
+        "Stamina": 2,
+        "Morale": "5+"
+      }
+    },
+
+    "Skirmishers": {
+      "British": {
+        "Description": "Lightly armed and mobile troops used to harass the enemy and screen the main force, often integrated within light infantry units.",
+        "Movement": {
+          "Skirmish Formation": "Up to 12 inches per order, with increased flexibility to move through rough terrain",
+          "Disordered": "No Movement"
+        },
+        "Shooting": {
+          "Range": {
+            "Smoothbore Carbines": "12 inches",
+            "Rifled Carbines": "18 inches (for specialized skirmishers like sharpshooters)"
+          },
+          "Attack Dice": {
+            "Skirmish Formation": 3,
+            "Specialised Skirmishers": "Re-roll misses"
+          }
+        },
+        "Hand-to-Hand": {
+          "Combat Value": 3,
+          "Modifiers": {
+            "Large Unit": "+2",
+            "Small Unit": "-2",
+            "Tiny Unit": "Roll only 1 dice",
+            "Re-roll misses": "Does not apply"
+          }
+        },
+        "Stamina": 2,
+        "Morale": "4+"
+      },
+      "French": {
+        "Description": "Includes Voltigeurs, highly mobile troops effective in rough terrain, used to harass the enemy and protect the main force.",
+        "Movement": {
+          "Skirmish Formation": "Up to 12 inches per order, with increased flexibility to move through rough terrain",
+          "Disordered": "No Movement"
+        },
+        "Shooting": {
+          "Range": {
+            "Smoothbore Carbines": "12 inches",
+            "Rifled Carbines": "18 inches"
+          },
+          "Attack Dice": {
+            "Skirmish Formation": 3,
+            "Specialised Skirmishers": "Re-roll misses"
+          }
+        },
+        "Hand-to-Hand": {
+          "Combat Value": 3,
+          "Modifiers": {
+            "Large Unit": "+2",
+            "Small Unit": "-2",
+            "Tiny Unit": "Roll only 1 dice",
+            "Re-roll misses": "Does not apply"
+          }
+        },
+        "Stamina": 2,
+        "Morale": "4+"
+      }
+    },
+    "Royal Guard Infantry": {
+      "British": {
+        "Description": "Elite units known for their exceptional discipline and combat prowess.",
+        "Movement": {
+          "Line Formation": "Up to 12 inches per order",
+          "March Column Formation": "Up to 24 inches per order",
+          "Square Formation": "Limited to move vertically away from an enemy towards 'home' 6 inches per order",
+          "Disordered": "No Movement"
+        },
+        "Shooting": {
+          "Range": {
+            "Smoothbore Muskets": "18 inches"
+          },
+          "Attack Dice": {
+            "Line Formation": 4,
+            "Double Line Formation": 3,
+            "March Column or Square": "2 attack dice (square formation: 2 dice per face)",
+            "Mixed Formation": 2
+          }
+        },
+        "Hand-to-Hand": {
+          "Combat Value": 8,
+          "Modifiers": {
+            "Large Unit": "+2",
+            "Small Unit": "-2",
+            "Tiny Unit": "Roll only 1 dice"
+          }
+        },
+        "Stamina": 4,
+        "Morale": "3+"
+      },
+      "French": {
+        "Description": "Highly versatile and elite units capable of excelling in various formations.",
+        "Movement": {
+          "Line Formation": "Up to 12 inches per order",
+          "March Column Formation": "Up to 24 inches per order",
+          "Square Formation": "Limited to move vertically away from an enemy towards 'home' 6 inches per order",
+          "Disordered": "No Movement"
+        },
+        "Shooting": {
+          "Range": {
+            "Smoothbore Muskets": "18 inches"
+          },
+          "Attack Dice": {
+            "Line Formation": 4,
+            "Double Line Formation": 3,
+            "March Column or Square": "2 attack dice (square formation: 2 dice per face)",
+            "Mixed Formation": 2
+          }
+        },
+        "Hand-to-Hand": {
+          "Combat Value": 8,
+          "Modifiers": {
+            "Large Unit": "+2",
+            "Small Unit": "-2",
+            "Tiny Unit": "Roll only 1 dice"
+          }
+        },
+        "Stamina": 4,
+        "Morale": "3+"
+      }
+    }
+  }
+}
+  
+

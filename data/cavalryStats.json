@@ -1,0 +1,207 @@
+{
+    "Cavalry": {
+      "Light Cavalry": {
+        "British": {
+          "Description": "Used for scouting, skirmishing, and quick attacks.",
+          "Movement": {
+            "Standard Movement": "Up to 18 inches per order",
+            "Charge": "Up to 24 inches per order",
+            "Disordered": "No movement"
+          },
+          "Hand-to-Hand": {
+            "Combat Value": 6,
+            "Modifiers": {
+              "Large Unit": "+2",
+              "Small Unit": "-2",
+              "Tiny Unit": "Roll only 1 die"
+            }
+          },
+          "Stamina": 3,
+          "Morale": "4+"
+        },
+        "French": {
+          "Description": "Used for scouting, skirmishing, and quick attacks.",
+          "Movement": {
+            "Standard Movement": "Up to 18 inches per order",
+            "Charge": "Up to 24 inches per order",
+            "Disordered": "No movement"
+          },
+          "Hand-to-Hand": {
+            "Combat Value": 6,
+            "Modifiers": {
+              "Large Unit": "+2",
+              "Small Unit": "-2",
+              "Tiny Unit": "Roll only 1 die"
+            }
+          },
+          "Stamina": 3,
+          "Morale": "4+"
+        }
+      },
+      "Light Cavalry (Lancers)": {
+        "British": {
+          "Description": "Used for scouting, skirmishing, and quick attacks.",
+          "Movement": {
+            "Standard Movement": "Up to 18 inches per order",
+            "Charge": "Up to 24 inches per order",
+            "Disordered": "No movement"
+          },
+          "Hand-to-Hand": {
+            "Combat Value": 7,
+            "Modifiers": {
+              "Large Unit": "+2",
+              "Small Unit": "-2",
+              "Tiny Unit": "Roll only 1 die"
+            }
+          },
+          "Stamina": 3,
+          "Morale": "4+",
+          "SpecialRule": "Charging +1 to combat value"
+        },
+        "French": {
+          "Description": "Used for scouting, skirmishing, and quick attacks.",
+          "Movement": {
+            "Standard Movement": "Up to 18 inches per order",
+            "Charge": "Up to 24 inches per order",
+            "Disordered": "No movement"
+          },
+          "Hand-to-Hand": {
+            "Combat Value": 7,
+            "Modifiers": {
+              "Large Unit": "+2",
+              "Small Unit": "-2",
+              "Tiny Unit": "Roll only 1 die"
+            }
+          },
+          "Stamina": 3,
+          "Morale": "4+",
+          "SpecialRule": "Charging +1 to combat value"
+        }
+      },
+      "Heavy Cavalry": {
+        "British": {
+          "Description": "Armored units used for powerful charges and breaking enemy lines.",
+          "Movement": {
+            "Standard Movement": "Up to 12 inches per order",
+            "Charge": "Up to 18 inches per order",
+            "Disordered": "No movement"
+          },
+          "Hand-to-Hand": {
+            "Combat Value": 8,
+            "Modifiers": {
+              "Large Unit": "+2",
+              "Small Unit": "-2",
+              "Tiny Unit": "Roll only 1 die"
+            }
+          },
+          "Stamina": 3,
+          "Morale": "3+"
+        },
+        "French": {
+          "Description": "Armored units used for powerful charges and breaking enemy lines.",
+          "Movement": {
+            "Standard Movement": "Up to 12 inches per order",
+            "Charge": "Up to 18 inches per order",
+            "Disordered": "No movement"
+          },
+          "Hand-to-Hand": {
+            "Combat Value": 8,
+            "Modifiers": {
+              "Large Unit": "+2",
+              "Small Unit": "-2",
+              "Tiny Unit": "Roll only 1 die"
+            }
+          },
+          "Stamina": 3,
+          "Morale": "3+"
+        }
+      },
+      "Dragoons": {
+        
+        "British": {
+          "Description": "Versatile troops that can fight both mounted and on foot.",
+          "Movement": {
+            "Standard Movement": "Up to 12 inches per order",
+            "Charge": "Up to 18 inches per order",
+            "Disordered": "No movement",
+            "Dismounted": "Takes movement rules from Light infantry or Skirmishers"
+          },
+          "Hand-to-Hand": {
+            "Combat Value": 7,
+            "Combat Value (Dismounted)": 6,
+            "Modifiers": {
+              "Large Unit": "+2",
+              "Small Unit": "-2",
+              "Tiny Unit": "Roll only 1 die"
+            }
+          },
+          "Stamina": 3,
+          "Morale": "4+"
+        },
+        "French": {
+          "Description": "Versatile troops that can fight both mounted and on foot.",
+          "Movement": {
+            "Standard Movement": "Up to 12 inches per order",
+            "Charge": "Up to 18 inches per order",
+            "Disordered": "No movement",
+            "Dismounted": "Takes movement rules from Light infantry or Skirmishers"
+          },
+          "Hand-to-Hand": {
+            "Combat Value": 7,
+            "Combat Value (Dismounted)": 6,
+            "Modifiers": {
+              "Large Unit": "+2",
+              "Small Unit": "-2",
+              "Tiny Unit": "Roll only 1 die"
+            }
+          },
+          "Stamina": 3,
+          "Morale": "4+"
+        }
+      },
+    "Royal Cavalry": {
+    "British": {
+      "Description": "Cavalry units known for their powerful charges and resilience. Includes units like the Household Cavalry.",
+      "Movement": {
+        "Standard Movement": "Up to 12 inches per order",
+        "Charge": "Up to 18 inches per order",
+        "Disordered": "No movement"
+      },
+      "Hand-to-Hand": {
+        "Combat Value": 9,
+        "Modifiers": {
+          "Large Unit": "+2",
+          "Small Unit": "-2",
+          "Tiny Unit": "Roll only 1 die"
+        }
+      },
+      "Stamina": 4,
+      "Morale": "3+",
+      "SpecialRuleOne": "Elite Troops : +1 to combat value in all situations",
+      "SpecialRuleTwo": "Stubborn: May re-roll failed morale checks"
+    },
+    "French": {
+      "Description": "Cavalry units known for their powerful charges and resilience. Includes units like the Imperial Guard Heavy Cavalry.",
+      "Movement": {
+        "Standard Movement": "Up to 12 inches per order",
+        "Charge": "Up to 18 inches per order",
+        "Disordered": "No movement"
+      },
+      "Hand-to-Hand": {
+        "Combat Value": 9,
+        "Modifiers": {
+          "Large Unit": "+2",
+          "Small Unit": "-2",
+          "Tiny Unit": "Roll only 1 die"
+        }
+      },
+      "Stamina": 4,
+      "Morale": "3+",
+      "SpecialRuleOne": "Elite Troops : +1 to combat value in all situations",
+      "SpecialRuleTwo": "Stubborn: May re-roll failed morale checks"
+        }
+      } 
+          
+    }
+  }
+  

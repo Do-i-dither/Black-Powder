@@ -1,0 +1,136 @@
+/* styles/infantry.css */
+.card {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+  }
+  
+  .card h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .card h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .topRight {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .moraleContainer, .staminaContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  
+  .moraleContainer p, .staminaContainer p {
+    margin-left: 5px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center the image vertically */
+  }
+  
+  .stats {
+    width: 33%;
+    text-align: left;
+    font-size: 16px; /* Set font size to 16px */
+  }
+  
+  .imageContainer {
+    width: 67%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imageContainer img {
+    width: 80%; /* Set image width to 80% */
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1120px) {
+    .topRight {
+      position: static;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .moraleContainer, .staminaContainer {
+      margin-left: 0;
+      margin-bottom: 10px;
+      justify-content: center;
+    }
+  
+    .content {
+      flex-direction: column;
+    }
+  
+    .stats, .imageContainer {
+      width: 100%;
+    }
+  }
+  .divider {
+    height: 20px !important;
+  }
+
+  /* styles/artillery/artillery.module.css */
+
+/* Inherit base styles from infantry.css */
+@import '../infantry.css';
+
+/* Artillery section styles */
+.artilleryColumns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+}
+
+.artilleryColumn {
+  flex: 1;
+  min-width: 300px; /* Ensures columns don't get too narrow */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Ensure background matches card */
+  text-align: left; /* Align text to the left */
+}
+
+.artilleryColumn h3 {
+  margin-top: 0; /* Remove top margin for headings in columns */
+}
+
+.artilleryColumn p {
+  margin: 5px 0; /* Adjust paragraph margins */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .artilleryColumns {
+    flex-direction: column;
+  }
+}

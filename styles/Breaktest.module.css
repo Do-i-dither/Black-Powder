@@ -1,0 +1,196 @@
+.container {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .title a:hover,
+  .title a:focus,
+  .title a:active {
+    text-decoration: underline;
+  }
+  
+  .title {
+    margin: 0 0 1rem;
+    line-height: 1.15;
+    font-size: 3.6rem;
+    font-family: 'AquilineTwo';
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .title,
+  .description {
+    text-align: center;
+  }
+  
+  .description {
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+  
+  .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    max-width: 800px;
+    margin-top: 3rem;
+  }
+  
+  .card {
+    margin: 1rem;
+    flex-basis: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transition:
+      color 0.15s ease,
+      border-color 0.15s ease;
+  }
+  .cardShooting {
+        margin: 1rem;
+        flex-basis: 100%;
+        padding: 1.5rem;
+        text-align: center;
+        color: inherit;
+        text-decoration: none;
+        border: 1px solid #eaeaea;
+        border-radius: 10px;
+        transition:
+          color 0.15s ease,
+          border-color 0.15s ease;
+  }
+  .cardShooting h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    text-align:center;
+  }
+
+  .cardShooting p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  .cardModifiers {
+    margin: 10px!important;
+    flex-basis: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition:
+      color 0.15s ease,
+      border-color 0.15s ease;
+  }
+  
+  .card h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  .logo {
+    height: 1em;
+  }
+  .icon {
+    width:10%
+  }
+
+  .modifierPlus {
+    color:green;
+  }
+  .modifierMinus {
+    color:red;
+  }
+
+  .modifierLetter {
+    color:blue;
+  }
+  
+  @media (max-width: 600px) {
+    .grid {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  
+
+  .tableResponsive {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .tableResponsive table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+    background-color: #f9f9f9;
+  }
+  
+  .tableResponsive th,
+  .tableResponsive td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .tableResponsive thead {
+    background-color: #f2f2f2;
+  }
+  
+  .tableResponsive thead th {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .tableResponsive tbody tr {
+    transition: background-color 0.2s ease;
+  }
+  
+  .tableResponsive tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+  }
+  
+  .tableResponsive tbody tr:hover {
+    background-color: #eaeaea;
+  }
+  
+  .tableResponsive td strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .tableResponsive td {
+    line-height: 1.6;
+  }
+  
+  .tableResponsive td p {
+    margin: 5px 0;
+  }
+  

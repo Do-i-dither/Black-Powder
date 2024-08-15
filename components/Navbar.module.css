@@ -1,0 +1,179 @@
+/* components/Navbar.module.css */
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/* Define keyframes for fade-in effect from left to right */
+@keyframes fadeInLeftToRight {
+    from {
+      opacity: 0;
+      transform: translateX(-160px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.navTop {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 101; /* Ensure the top bar is above other content */
+  padding: 10px 20px;
+  width: 100%;
+  height: 70px; /* Adjust height to accommodate larger icon */
+  background-color: transparent; /* Transparent background for the top bar */
+}
+
+.hamburgerIcon {
+  margin-left: auto;
+  color: #000; /* Black color for the hamburger icon */
+  cursor: pointer;
+  font-size: 48px; /* Doubled size from 24px to 48px */
+  opacity: 1;
+  transition: opacity 0.3s ease; /* Fade in/out effect */
+  position: relative;
+  top: 10px; /* Move the icon down from the top */
+  right: 20px;
+}
+
+.hamburgerIconHidden {
+  opacity: 0; /* Hide the icon */
+}
+
+.navDrill {
+  position: fixed;
+  top: 0;
+  left: 0; /* Position menu on the left side */
+  width: 250px;
+  height: 100vh;
+  background-color: #000; /* Black background for the menu */
+  color: #fff; /* White text */
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: scale(0);
+  transform-origin: top left; /* Transform origin adjusted for left alignment */
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  z-index: 100; /* Ensure it overlays above other content */
+}
+
+.navDrillVisible {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.closeButton {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  color: red; /* Red color for the close button */
+  font-size: 24px; /* Size of the close button */
+  cursor: pointer;
+  z-index: 999; /* Ensure close button is above the menu items */
+}
+
+.navItems {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 0em; /* Add padding at the top to avoid overlap with the close button */
+}
+
+.navItem {
+  border-bottom: solid 1px #333; /* Dark gray border for separation */
+}
+
+.navLink {
+  display: block;
+  padding: 0.875em 1em;
+  background-color: #000; /* Black background for menu items */
+  color: #fff; /* White text */
+  font-size: calc(1rem + 4px); /* Increase font size by 4px */
+  line-height: 1.5em;
+  font-weight: 300;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+  transform: translateX(-160px); /* Start position for animation */
+  animation: fadeInLeftToRight 0.5s ease forwards; /* Apply animation */
+}
+
+.navLink:hover {
+  background-color: #333; /* Slightly lighter black for hover effect */
+}
+
+.navBackButton {
+  display: block;
+  padding: 0.875em 1em;
+  background-color: #333; /* Darker background for back button */
+  color: #fff; /* White text */
+  font-size: calc(1rem + 4px); /* Increase font size by 4px */
+  line-height: 1.5em;
+  font-weight: 300;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+  transform: translateX(-160px); /* Start position for animation */
+  animation: fadeInLeftToRight 0.5s ease forwards; /* Apply animation */
+}
+
+.navBackButton:hover {
+  background-color: #555; /* Slightly lighter dark color for hover effect */
+}
+
+/* Add delays for each item to stagger their appearance */
+.navItem:nth-child(1) .navLink {
+    animation-delay: 0.1s;
+  }
+  .navItem:nth-child(2) .navLink {
+    animation-delay: 0.2s;
+  }
+  .navItem:nth-child(3) .navLink {
+    animation-delay: 0.3s;
+  }
+  .navItem:nth-child(4) .navLink {
+    animation-delay: 0.4s;
+  }
+  .navItem:nth-child(5) .navLink {
+    animation-delay: 0.5s;
+  }
+  .navItem:nth-child(6) .navLink {
+    animation-delay: 0.6s;
+  }
+  
+  /* Apply same animation to the back button */
+  .navBackButton {
+    animation-delay: 0.0s;
+  }
+
+  .mobileMenuTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'AquilineTwo';
+    font-size:28px;
+    margin-bottom:0px;
+    z-index:110;
+  }
+
+  .mobileMenuTitle p {
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    text-align:center;
+    padding: 0px 0px 3px 3px;
+    margin-top:-20px;
+  }
+
+  .mobileMenuTitle h1 {
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+
+
+@media (max-width: 768px) {
+  .navDrill {
+    width: 90vw; /* Full width on mobile */
+  }
+}

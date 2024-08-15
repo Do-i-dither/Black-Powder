@@ -1,0 +1,115 @@
+{
+    "Artillery": {
+      "FieldArtillery": {
+        "Description": "Standard cannons used to support infantry and cavalry.",
+        "Movement": {
+          "LimberedMovementTowedByHorses": "Up to 12 inches per order",
+          "UnlimberedMovementDeployedForFiring": "No movement",
+          "Manhandled": "1 order only, up to 6 inches",
+          "Disordered": "No movement"
+        },
+        "Shooting": {
+          "Range": {
+            "SmoothboreBattalionGuns": "36 inches",
+            "SmoothboreFieldGuns": "48 inches",
+            "SmoothboreHeavyGuns": "60 inches"
+          },
+          "AttackDice": {
+            "SmoothboreBattalionGuns": {
+              "ShortRangeUpTo12Inches": 3,
+              "EffectiveRange12To24Inches": 2,
+              "LongRange24To36Inches": 1
+            },
+            "SmoothboreFieldGuns": {
+              "ShortRangeUpTo18Inches": 4,
+              "EffectiveRange18To36Inches": 3,
+              "LongRange36To48Inches": 2
+            },
+            "SmoothboreHeavyGuns": {
+              "ShortRangeUpTo24Inches": 5,
+              "EffectiveRange24To48Inches": 4,
+              "LongRange48To60Inches": 3
+            }
+          }
+        },
+        "HandToHand": {
+          "CombatValue": 1
+        },
+        "Stamina": 3,
+        "Morale": "4+",
+        "SpecialRuleOne": "Canister Shot: At close range (up to 12 inches), artillery can use canister shot, which improves the to-hit modifier by +1 (e.g., from 4+ to 3+).",
+        "SpecialRuleTwo": "Disorder: Any hit from artillery can cause the target unit to become disordered. (if a unit is hit by artillery they have to do a morale test using the Artillery Morale dice modifiers, if failed they become disordered)"
+      },
+      "HorseArtillery": {
+        "Description": "More mobile artillery units that can keep up with cavalry.",
+        "Movement": {
+          "LimberedMovementTowedByHorses": "Up to 18 inches per order",
+          "UnlimberedMovementDeployedForFiring": "No movement",
+          "Manhandled": "1 order only, up to 6 inches",
+          "Disordered": "No movement"
+        },
+        "Shooting": {
+          "Range": {
+            "SmoothboreHorseArtillery": "36 inches",
+            "SmoothboreLightFieldGuns": "48 inches"
+          },
+          "AttackDice": {
+            "SmoothboreHorseArtillery": {
+              "ShortRangeUpTo12Inches": 3,
+              "EffectiveRange12To24Inches": 2,
+              "LongRange24To36Inches": 1
+            },
+            "SmoothboreLightFieldGuns": {
+              "ShortRangeUpTo18Inches": 4,
+              "EffectiveRange18To36Inches": 3,
+              "LongRange36To48Inches": 2
+            }
+          }
+        },
+        "HandToHand": {
+          "CombatValue": 1
+        },
+        "Stamina": 3,
+        "Morale": "4+",
+        "SpecialRuleOne": "Canister Shot: At close range (up to 12 inches), artillery can use canister shot, which improves the to-hit modifier by +1 (e.g., from 4+ to 3+).",
+        "SpecialRuleTwo": "Disorder: Any hit from artillery can cause the target unit to become disordered. (if a unit is hit by artillery they have to do a morale test using the Artillery Morale dice modifiers, if failed they become disordered)"
+      },
+      "SiegeArtillery": {
+        "Description": "Heavy guns used for attacking fortifications.",
+        "Movement": {
+          "LimberedMovementTowedByHorses": "Up to 6 inches per order",
+          "UnlimberedMovementDeployedForFiring": "No movement but can pivot to face a new direction",
+          "Manhandled": "Considered too heavy to manhandle",
+          "Disordered": "No movement"
+        },
+        "Shooting": {
+          "Range": {
+            "SiegeGuns": "60 inches",
+            "Mortars": "48 inches (indirect fire)"
+          },
+          "AttackDice": {
+            "SiegeGuns": {
+              "ShortRangeUpTo24Inches": 5,
+              "EffectiveRange24To48Inches": 4,
+              "LongRange48To60Inches": 3
+            },
+            "Mortars": {
+              "ShortRangeUpTo12Inches": 4,
+              "EffectiveRange12To36Inches": 3,
+              "LongRange36To48Inches": 2
+            }
+          }
+        },
+        "HandToHand": {
+          "CombatValue": 1
+        },
+        "Stamina": 3,
+        "Morale": "4+",
+        "SpecialRules": {
+          "SiegeGuns": "Siege artillery can re-roll failed hits when targeting fortifications.",
+          "Disorder": "Any hit from artillery can cause the target unit to become disordered. (if a unit is hit by artillery they have to do a morale test using the Artillery Morale dice modifiers, if failed they become disordered)"
+        }
+      }
+    }
+  }
+  
