@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 export async function getStaticProps() {
-  const filePath = path.resolve('C:/Users/Scott/Desktop/Black-Powder-Rules/data/infantryStats.json');
+  const filePath = path.resolve(process.cwd(), 'data/infantryStats.json');
   const jsonData = fs.readFileSync(filePath);
   const infantryStats = JSON.parse(jsonData);
 

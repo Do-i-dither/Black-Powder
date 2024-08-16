@@ -3,8 +3,8 @@ import path from 'path';
 import styles from './artillery.module.css'; // Adjust path as needed
 
 export async function getStaticProps() {
-  // Define the path to your JSON file
-  const filePath = path.resolve('C:/Users/Scott/Desktop/Black-Powder-Rules/data/artilleryStats.json');
+ // Define the path to your JSON file using a relative path
+ const filePath = path.resolve(process.cwd(), 'data/artilleryStats.json');
   
   // Read the JSON file
   const jsonData = fs.readFileSync(filePath);
